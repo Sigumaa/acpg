@@ -2,7 +2,7 @@ package main
 
 type A struct {
 	URL string
-	Id  string
+	ID  string
 	UTC string
 }
 
