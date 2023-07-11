@@ -34,4 +34,12 @@ jobs:
         -H "Authorization: token ${GITHUB_TOKEN}" \
         -d "{\"body\": \"```\\n$(cat result)\\n```\"}" \
         ${URL}
-        
+    
+    - name: fail check
+      run: |
+        if [ -s result ]; then
+          exit 1
+        else
+          echo "LGTM"
+        fi
+            
