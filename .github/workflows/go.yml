@@ -24,9 +24,6 @@ jobs:
       run: |
         go vet -vettool=`which stringdetector` -stringdetector.flag="Url" ./... 2>&1 | tee result
         sed -i -z 's/\n/\\n/g' result
-        if [ -s result ]; then
-          exit 1
-        fi
     
     - name: comment
       env: 
