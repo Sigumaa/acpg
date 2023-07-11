@@ -22,7 +22,7 @@ jobs:
       run: ls
       
     - name: install vettool
-      run: GOBIN=$(pwd) go install github.com/Sigumaa/stringdetector/cmd/stringdetector@latest
+      run: GOBIN=$(pwd) GOPRIVATE="github.com/Sigumaa/stringdetector" go install github.com/Sigumaa/stringdetector/cmd/stringdetector@latest
       
     - name: ls
       run: ls
