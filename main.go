@@ -1,6 +1,6 @@
 package main
 
-type Url int
+type Url string
 
 func main() {
   var URL Url
