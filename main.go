@@ -1,18 +1,18 @@
 package main
 
 type A struct {
-	Url string
+	URL string
 	Id  string
-	Utc string
+	UTC string
 }
 
 func main() {
-	var Url string
-	print(Url)
+	var URL string
+	print(URL)
 
-	var Id string
-	print(Id)
+	var ID string
+	print(ID)
 
-	var Utc string
-	print(Utc)
+	var UTC string
+	print(UTC)
 }
