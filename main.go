@@ -3,6 +3,6 @@ package main
 type Url int
 
 func main() {
-  var URL string
+  var URL Url
   print(URL)
 }
