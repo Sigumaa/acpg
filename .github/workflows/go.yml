@@ -22,7 +22,7 @@ jobs:
       
     - name: go vet
       run: |
-        go vet -vettool=`which stringdetector` -stringdetector.flag="Url" ./... 2>&1 | tee result
+        go vet -vettool=`which stringdetector` -stringdetector.flag="Url,Id,Utc" ./... 2>&1 | tee result
         sed -i -z 's/\n/\\n/g' result
         if [ -s result ]; then
           exit 1
